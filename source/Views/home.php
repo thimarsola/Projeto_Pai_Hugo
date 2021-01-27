@@ -1,7 +1,7 @@
 <?php $v->layout("_theme"); ?>
 
 <?= $v->start("stylesheet"); ?>
-<link rel="stylesheet" href="<?= asset("/css/estilos.css"); ?>" />
+<link rel="stylesheet" href="<?= asset("/css/home.min.css"); ?>" />
 <?= $v->end; ?>
 
 <!--hero-->
@@ -22,7 +22,7 @@
 
             <!--cta buttons-->
             <div class="hero__content__buttons">
-                <a class="btn btn--theme-primary" href="#">Fale comigo</a>
+                <a class="btn btn--theme-primary" href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">Fale comigo</a>
                 <a class="btn btn--theme-primary" href="#sobre">Minha história</a>
             </div>
             <!--end of cta buttons-->
@@ -44,10 +44,10 @@
 <!--end of hero-->
 
 <!--whatsapp button-->
-<div class="whatsapp">
+<div id="whatsapp">
 
-    <a href="#">
-        <img src="<?= asset("img/icone_whatsapp"); ?>" loading="lazy" title="Fale comigo pelo whatsapp" alt="Botão whatsapp"/>
+    <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" title="Fale comigo pelo whatsapp" target="_blank">
+        <img src="<?= asset("img/icone_whatsapp.svg"); ?>" loading="lazy" title="Fale comigo pelo whatsapp" alt="Botão whatsapp"/>
     </a>
 
 </div>
@@ -62,7 +62,10 @@
 
             <!--image-->
             <div class="about__row__image">
-                <img src="<?= asset("img/foto_pai_hugo.jpg"); ?>" loading="lazy" alt="Foto do Pai Hugo"/>
+                <picture>
+                    <source srcset="<?= asset("img/foto_pai_hugo.jpg"); ?>" type="image/webp">
+                    <img src="<?= asset("img/foto_pai_hugo.jpg"); ?>" loading="lazy" alt="Foto do Pai Hugo"/>
+                </picture>
             </div>
             <!--end of image-->
 
@@ -95,19 +98,28 @@
 
             <!--column-->
             <div class="about__grid__column">
-                <img src="<?= asset("img/cartas_tarot.jpg"); ?>" loading="lazy" alt="Cartas de Tarot Pai Hugo"/>
+                <picture>
+                    <source srcset="<?= asset("img/cartas_tarot.webp"); ?>" type="image/webp">
+                    <img src="<?= asset("img/cartas_tarot.jpg"); ?>" loading="lazy" alt="Cartas de Tarot Pai Hugo"/>
+                </picture>
             </div>
             <!--end of column-->
 
             <!--column-->
             <div class="about__grid__column">
-                <img src="<?= asset("img/sait.jpg"); ?>" loading="lazy" alt="Sait Pai Hugo"/>
+                <picture>
+                    <source srcset="<?= asset("img/centro_nacional_de_umbanda.webp"); ?>" type="image/webp">
+                    <img src="<?= asset("img/centro_nacional_de_umbanda.jpg"); ?>" loading="lazy" alt="Centro Nacional de Umabanda - Pai Hugo"/>
+                </picture>
             </div>
             <!--end of column-->
 
             <!--column-->
             <div class="about__grid__column">
-                <img src="<?= asset("img/cartas_tarot_mesa.jpg"); ?>" loading="lazy" alt="Cartas de Tarot na mesa"/>
+                <picture>
+                    <source srcset="<?= asset("img/cartas_tarot_mesa.webp"); ?>" type="image/webp">
+                    <img src="<?= asset("img/ccartas_tarot_mesa.jpg"); ?>" loading="lazy" alt="Cartas de Tarot na mesa"/>
+                </picture>
             </div>
             <!--end of column-->
 
@@ -139,7 +151,8 @@
                 <!--content-->
                 <div class="mooring__row__container__content">
                     <p>Amarração amorosa é um trabalho espiritual que invoca as entidades de luz para ajudar um casal que por algum motivo tivera seu relacionamento amoroso interrompido ou ameaçado. Este tipo de trabalho alinha a vida espiritual do casal de tal forma que o desejo de união carnal torna-se inevitável. Um dos principais efeitos de uma amarração amorosa é a de fazer com que a pessoa tenha sonhos com quem encomendou o trabalho. Estes sonhos tendem a se tornar cada vez mais intensos ao ponto de despertar desejos sexuais rapidamente.</p>
-                    <a href="#" class="btn btn--theme-primary" title="Fale comigo pelo whatsapp">Fale comigo</a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="btn btn--theme-primary" title="Fale comigo pelo whatsapp" target="_blank">Fale comigo</a>
                 </div>
                 <!--end of content-->
 
@@ -147,7 +160,10 @@
             <!--end of container-->
 
             <!--image-->
-            <div class="mooring__image">
+            <div class="mooring__row__image">
+                <picture>
+                    <source srcset="<?= asset("img/sol_lua_mistica.webp"); ?>" type="image/webp">
+                </picture>
                 <img src="<?= asset("img/sol_lua_mistica.png"); ?>" loading="lazy" alt="Sol e Lua"/>
             </div>
             <!--end of image-->
@@ -187,7 +203,10 @@
 
                     <!--image-->
                     <div class="works__container__card__image">
-                        <img src="<?= asset("img/{$work["image"]}"); ?>" loading="lazy" alt="Pai Hugo | Trabalho para <?= $work["title"]; ?>"/>
+                        <picture>
+                            <source srcset="<?= asset("img/{$work["image"]}.webp"); ?>" type="image/webp">
+                            <img src="<?= asset("img/{$work["image"]}.png"); ?>" loading="lazy" alt="Pai Hugo | Trabalho para <?= $work["title"]; ?>"/>
+                        </picture>
                     </div>
                     <!--end of image-->
 
@@ -201,7 +220,7 @@
                         </header>
                         <!--end of header-->
 
-                        <a href="#" class="btn btn--outline-theme-white" title="Fale comigo pelo whatsapp sobre o trabalho de <?= $work["title"]; ?>">Fale comigo</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20<?= rawurldecode($work["title"]); ?>" class="btn btn--outline-theme-white" title="Fale comigo pelo whatsapp sobre o trabalho de <?= $work["title"]; ?>" target="_blank">Fale comigo</a>
 
                     </div>
                     <!--end of content-->
@@ -241,7 +260,7 @@
                 <p>Amarração amorosa é um trabalho espiritual que invoca as entidades de luz para ajudar um casal que por algum motivo tivera seu relacionamento amoroso interrompido ou ameaçado.</p>
                 <p>Este tipo de trabalho alinha a vida espiritual do casal de tal forma que o desejo de união carnal torna-se inevitável. Um dos principais efeitos de uma amarração amorosa é a de fazer com que a pessoa tenha sonhos com quem encomendou o trabalho. Estes sonhos tendem a se tornar cada vez mais intensos ao ponto de despertar desejos sexuais rapidamente.</p>
 
-                <a href="#" class="btn btn--theme-primary" title="Fale comigo pelo whatsapp">Fale comigo</a>
+                <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="btn btn--theme-primary" title="Fale comigo pelo whatsapp" target="_blank">Fale comigo</a>
             </div>
             <!--end of content-->
 
@@ -280,7 +299,10 @@
 
                     <!--image-->
                     <div class="testimony__content__card__image">
-                        <img src="<?= asset("img/imagem_depoimento.png") ?>" loading="lazy" alt="Depoimento <?= $testimony["name"]; ?>"/>
+                        <picture>
+                            <source srcset="<?= asset("img/imagem_depoimento.webp") ?>" type="image/webp">
+                            <img src="<?= asset("img/imagem_depoimento.png") ?>" loading="lazy" alt="Depoimento <?= $testimony["name"]; ?>"/>
+                        </picture>
                     </div>
                     <!--end of image-->
 
@@ -313,7 +335,7 @@
 <!--end of testimony-->
 
 <!--cta-->
-<section class="cta">
+<section id="consulta" class="cta">
 
     <div class="container">
 
@@ -327,7 +349,7 @@
         <!--content-->
         <div class="cta__content">
 
-            <a href="#" class="btn btn--theme-primary" title="Agende sua consulta comigo pelo whatsapp">Quero agendar</a>
+            <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta" class="btn btn--theme-primary" title="Agende sua consulta comigo pelo whatsapp" target="_blank">Quero agendar</a>
 
         </div>
         <!--end of content-->
@@ -339,9 +361,9 @@
 
 <!--caution-->
 <section class="caution">
-    
+
     <div class="container">
-        
+
         <!--header-->
         <header class="caution__header">
             <p>Atenção</p>
@@ -349,7 +371,7 @@
             <hr>
         </header>
         <!--end of header-->
-        
+
         <!--content-->
         <div class="caution__content">
             <p>** Os valores do atendimento são sob Consulta **</p>
@@ -357,9 +379,8 @@
             <p>As ligações não são nossa responsabilidade e o valor da mesma será cobrada de acordo com a operadora. O custo médio de uma ligação fixa é de R$0,23 de acordo com a Anatel. Consulte sua operadora local. Claro R$ 1,35 – Oi R$1,53 -Vivo R$ 1,65 – Tim R$ 1,85</p>
         </div>
         <!--end of content-->
-        
+
     </div>
-    
+
 </section>
 <!--end of caution-->
-

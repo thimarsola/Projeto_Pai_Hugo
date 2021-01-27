@@ -2,48 +2,44 @@
     "works": 
             [
                 {
-                    "image": "amarracao_amorosa.jpg",
-                    "title": "Amarração Amorosa"
+                    "image": "amarracao_amorosa",
+                    "title": "Amarração amorosa"
                 },
                 {
-                    "image": "abertura_de_caminhos.jpg",
-                    "title": "Amarração Amorosa"
+                    "image": "abertura_de_caminhos",
+                    "title": "Abertura de caminhos"
                 },
                 {
-                    "image": "conquista_de_emprego.jpg",
-                    "title": "Conquista de Emprego"
+                    "image": "conquista_de_emprego",
+                    "title": "Conquista de emprego"
                 },
                 {
-                    "image": "conquista_de_prosperidade.jpg",
-                    "title": "Conquista de Prosperidade"
+                    "image": "conquista_de_prosperidade",
+                    "title": "Conquista de prosperidade"
                 },
                 {
-                    "image": "problemas_com_drogas.jpg",
-                    "title": "Problemas com Drogras"
+                    "image": "problemas_com_drogas",
+                    "title": "Problemas com drogras"
                 },
                 {
-                    "image": "amarracao_amorosa.jpg",
-                    "title": "Amarração Amorosa"
+                    "image": "afastamento_de_rivais",
+                    "title": "Afastamento de rivais"
                 },
                 {
-                    "image": "afastamento_de_rivais.jpg",
-                    "title": "Afastamento de Rivais"
+                    "image": "problemas_com_fertilidade",
+                    "title": "Problemas com fertilidade"
                 },
                 {
-                    "image": "problemas_com_fertilidade.jpg",
-                    "title": "Problemas com Fertilidade"
+                    "image": "probelmas_pessoais",
+                    "title": "Problemas pessoais"
                 },
                 {
-                    "image": "probelmas_pessoais.jpg",
-                    "title": "Problemas Pessoais"
+                    "image": "curas_espirituais",
+                    "title": "Curas espirituais"
                 },
                 {
-                    "image": "curas_espirituais.jpg",
-                    "title": "Curas Espirituais"
-                },
-                {
-                    "image": "limpeza_amorosa.jpg",
-                    "title": "Limpeza Amorosa"
+                    "image": "limpeza_amorosa",
+                    "title": "Limpeza amorosa"
                 }
             ]
 }

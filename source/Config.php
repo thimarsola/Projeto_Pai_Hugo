@@ -76,3 +76,10 @@ define("REGION", [
     "position" => "xxx",
     "icbm" => "xxx"
 ]);
+
+/**
+ * WHATSAPP
+ */
+define("CONTACT",[
+   "whatsapp" => "997977070" 
+]);

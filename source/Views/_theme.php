@@ -40,11 +40,11 @@
         <?= $v->section("stylesheet"); ?>
 
     </head>
-    <body>
+    <body id="home">
 
         <!--header-->
         <header class="header">
-            <div class="header_navbar">
+            <div class="header__navbar">
                 <?php if ($v->section("navbar")): ?>
                     <?= $v->section("navbar"); ?>
                 <?php else: ?>
@@ -55,7 +55,7 @@
                         </a>
 
                         <!-- toggle -->
-                        <div class="header_menu_section">
+                        <div class="header__navbar__section">
 
 
                             <div class="header__navbar__section__toggle">
@@ -66,6 +66,7 @@
                             
                             <!-- nav -->
                             <nav class="header__navbar__section__nav">
+                                
                                 <h1 class="d-none">Menu de navegação</h1>
                                 <ul>
                                     <li>
@@ -80,7 +81,8 @@
                                     <li>
                                         <a href="#trabalhos">Trabalhos</a>
                                     </li>
-                                        <a href="#contato">Contato</a>
+                                    <li>
+                                        <a href="#consulta">Consulta</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -110,7 +112,7 @@
             
             <!--developer-->
             <div class="footer__developer">
-                <p><small>Desenvolvido por <a href="https://goognet.com.br" target="_blank" title="Especialidados em Marketing Digital">Goognet Solução Digital</a></small></p>
+                <p><small>Desenvolvido por <strong><a href="https://goognet.com.br" target="_blank" title="Especialidados em Marketing Digital">Goognet Solução Digital</a></strong> </small></p>
             </div>
             <!--end of developer-->
             
@@ -118,7 +120,7 @@
         <!--end of footer-->
 
         <!-- SCRIPTS -->
-        <script src="<?= asset("/js/main.js"); ?>"></script>
+        <script src="<?= asset("/js/main.min.js"); ?>"></script>
         <?= $v->section("scripts"); ?>
     </body>
 
