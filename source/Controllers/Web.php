@@ -26,24 +26,6 @@ class Web extends Controller
     }
 
     /**
-     * CONTATO
-     */
-    public function contato(): void
-    {
-
-        $head = $this->seo->optimize(
-                        site("name"),
-                        site("desc"),
-                        $this->router->route("web.contato"),
-                        routeImage("Contato")
-                )->render();
-
-        echo $this->view->render("contato", [
-            "head" => $head,
-        ]);
-    }
-
-    /**
      * ERRO
      */
     public function error($data): void

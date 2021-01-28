@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://www.paihugo.com.br/robots.txt
+Sitemap: http://www.paihugo.com.br/sitemap.xml

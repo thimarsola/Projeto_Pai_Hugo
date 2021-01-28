@@ -163,8 +163,8 @@
             <div class="mooring__row__image">
                 <picture>
                     <source srcset="<?= asset("img/sol_lua_mistica.webp"); ?>" type="image/webp">
+                    <img src="<?= asset("img/sol_lua_mistica.png"); ?>" loading="lazy" alt="Sol e Lua"/>
                 </picture>
-                <img src="<?= asset("img/sol_lua_mistica.png"); ?>" loading="lazy" alt="Sol e Lua"/>
             </div>
             <!--end of image-->
 
@@ -220,7 +220,7 @@
                         </header>
                         <!--end of header-->
 
-                        <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20<?= rawurldecode($work["title"]); ?>" class="btn btn--outline-theme-white" title="Fale comigo pelo whatsapp sobre o trabalho de <?= $work["title"]; ?>" target="_blank">Fale comigo</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511<?= CONTACT["whatsapp"]; ?>&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20<?= urlencode($work["title"]); ?>" class="btn btn--outline-theme-white" title="Fale comigo pelo whatsapp sobre o trabalho de <?= $work["title"]; ?>" target="_blank">Fale comigo</a>
 
                     </div>
                     <!--end of content-->

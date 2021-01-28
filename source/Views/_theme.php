@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= site("locale"); ?>">
+<html lang="<?= site("lang"); ?>" itemscope itemtype="https://schema.org/WebSite">
 
     <head>
         <meta charset="UTF-8" />
@@ -112,7 +112,7 @@
             
             <!--developer-->
             <div class="footer__developer">
-                <p><small>Desenvolvido por <strong><a href="https://goognet.com.br" target="_blank" title="Especialidados em Marketing Digital">Goognet Solução Digital</a></strong> </small></p>
+                <p><small>Desenvolvido por <strong><a href="<?= DEV["url"]; ?>" target="_blank" title="Especialidados em Marketing Digital"><?= DEV["name"]; ?></a></strong> </small></p>
             </div>
             <!--end of developer-->
             

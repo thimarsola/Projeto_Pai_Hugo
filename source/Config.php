@@ -16,7 +16,8 @@ define("SITE", [
     "desc" => "Pai Hugo, especialista em casos amorosos há mais de  20 anos, auxiliando quem precisa de ajuda para ser feliz!",
     "domain" => "paihugo.com.br",
     "locale" => "pt_BR",
-    "root" => "https://localhost/paihugo.com.br/"
+    "lang" => "pt-BR",
+    "root" => "https://localhost/paihugo.com.br"
 ]);
 
 /**
@@ -50,9 +51,9 @@ define("DATA_LAYER_CONFIG", [
 define("SOCIAL", [
     "facebook_page" => "goognetsolucao",
     "facebook_author" => "goognetsolucao",
-    "facebook_appId" => "",
-    "twitter_creator" => "@",
-    "twitter_site" => "@"
+    "facebook_appId" => "112861974016840",
+    "twitter_creator" => "@GoognetSolucao",
+    "twitter_site" => "@GoognetSolucao"
 ]);
 
 /**
@@ -71,10 +72,10 @@ define("MAIL", [
  * REGION
  */
 define("REGION", [
-    "region" => "xxx",
-    "placename" => "xxx",
-    "position" => "xxx",
-    "icbm" => "xxx"
+    "region" => "BR-SP",
+    "placename" => "S&atilde;o Paulo",
+    "position" => "-23.550651;-46.633382",
+    "icbm" => "-23.550651, -46.633382"
 ]);
 
 /**
