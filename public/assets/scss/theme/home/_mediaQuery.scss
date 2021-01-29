@@ -202,24 +202,24 @@
     /*end of testimony*/
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
     /*hero*/
     .hero{
-        
+
         &__header{
-            
+
             p{
                 font:{
                     size: 4rem;
                 }
             }
-            
+
             h1{
                 font:{
                     size: 6rem;
                 }
             }
-            
+
         }
 
         &__content{
@@ -228,6 +228,9 @@
                 margin-top: 3rem;
 
                 a{
+                    display: inline-block;
+                    width: 100%;
+
                     &:first-child{
                         margin-right: 0;
                     }
@@ -247,11 +250,11 @@
 }
 
 @media screen and (max-width: 320px){
-    
+
     h1{
         font:{
             size: 5rem !important;
         }
     }
-    
+
 }

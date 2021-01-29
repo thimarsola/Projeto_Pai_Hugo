@@ -1,9 +1,15 @@
 @font-face {
   font-family: 'Karla';
-  src: url("../font/Karla.ttf") format("truetype"); }
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/Karla.ttf") format("truetype");
+  font-display: swap; }
 @font-face {
   font-family: 'Yeseva One';
-  src: url("../font/YesevaOne.ttf") format("truetype"); }
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/YesevaOne.ttf") format("truetype");
+  font-display: swap; }
 :root {
   --color-theme-primary: #BF0303;
   --color-theme-text: #fff;
@@ -756,7 +762,7 @@ html {
       margin: 3rem 0; }
 
   /*end of testimony*/ }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   /*hero*/
   .hero__header p {
     font-size: 4rem; }
@@ -764,11 +770,14 @@ html {
     font-size: 6rem; }
   .hero__content__buttons {
     margin-top: 3rem; }
-    .hero__content__buttons a:first-child {
-      margin-right: 0; }
-    .hero__content__buttons a:last-child {
-      margin-left: 0;
-      margin-top: 2rem; }
+    .hero__content__buttons a {
+      display: inline-block;
+      width: 100%; }
+      .hero__content__buttons a:first-child {
+        margin-right: 0; }
+      .hero__content__buttons a:last-child {
+        margin-left: 0;
+        margin-top: 2rem; }
 
   /*end of hero*/ }
 @media screen and (max-width: 320px) {

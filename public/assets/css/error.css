@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/Karla.ttf") format("truetype");
+  font-display: swap; }
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/YesevaOne.ttf") format("truetype");
+  font-display: swap; }
+:root {
+  --color-theme-primary: #BF0303;
+  --color-theme-text: #fff;
+  --color-theme-white: #fff;
+  --color-theme-developer: #81D00B;
+  --color-background: #080B13;
+  --color-background-navbar: rgba(10, 10, 19, 0.8);
+  --color-background-dark-blue: #1A1E28;
+  --color-background-linear: linear-gradient(90deg, rgba(26, 30, 40, 0.48) 5.17%, rgba(26, 30, 40, 0.2304) 100%); }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none !important; }
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif !important;
+  line-height: 1.5; }
+  html body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: var(--color-theme-text);
+    background-color: #080B13; }
+  html a,
+  html address,
+  html span,
+  html strong {
+    font-style: inherit !important;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit; }
+  html img {
+    display: block;
+    max-width: 100%; }
+  html ul {
+    list-style: none;
+    list-style-position: inside; }
+  html h1,
+  html h2,
+  html h3 {
+    font-size: inherit;
+    font-family: 'Yeseva One', cursive !important; }
+  html header {
+    width: 100%; }
+  html button {
+    background: none; }
+
+.d-none {
+  display: none !important; }
+
+/*includes*/
+/*end of includes*/
+/*Container*/
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  width: 100%; }
+
+@media (min-width: 576px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 1140px; } }
+.btn {
+  display: inline-block !important;
+  margin: 0;
+  padding: 1rem 5.6rem;
+  /*border-radius: 3px;*/
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Karla', serif !important;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+  .btn:active {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; }
+
+.btn--theme-primary {
+  background-color: #BF0303;
+  color: var(--color-theme-white);
+  transition: background-color 0.5s ease-in-out; }
+  .btn--theme-primary:hover {
+    background-color: #8d0202;
+    transition: background-color 0.5s ease-in-out; }
+
+.btn--theme-text {
+  background-color: #fff;
+  color: var(--color-theme-white);
+  transition: background-color 0.5s ease-in-out; }
+  .btn--theme-text:hover {
+    background-color: #e6e6e6;
+    transition: background-color 0.5s ease-in-out; }
+
+.btn--theme-white {
+  background-color: #fff;
+  color: var(--color-theme-primary);
+  transition: 0.3s ease-in-out all; }
+  .btn--theme-white:hover {
+    background-color: #d9d9d9;
+    transition: 0.3s ease-in-out all; }
+
+.btn--theme-developer {
+  background-color: #81D00B;
+  color: var(--color-theme-white);
+  transition: background-color 0.5s ease-in-out; }
+  .btn--theme-developer:hover {
+    background-color: #63a008;
+    transition: background-color 0.5s ease-in-out; }
+
+.btn--outline-theme-primary {
+  border: 1.5px solid #BF0303 !important;
+  color: #BF0303;
+  transition: background-color 0.3s ease-in-out; }
+  .btn--outline-theme-primary:hover {
+    background-color: #8d0202;
+    color: var(--color-theme-white);
+    transition: background-color 0.3s ease-in-out; }
+
+.btn--outline-theme-text {
+  border: 1.5px solid #fff !important;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out; }
+  .btn--outline-theme-text:hover {
+    background-color: #e6e6e6;
+    color: var(--color-theme-white);
+    transition: background-color 0.3s ease-in-out; }
+
+.btn--outline-theme-white {
+  border: 1.5px solid #fff !important;
+  /*border-radius: 5rem;*/
+  color: #fff;
+  transition: 0.3s ease-in-out all; }
+  .btn--outline-theme-white:hover {
+    background-color: var(--color-theme-primary);
+    border: 1.5px solid var(--color-theme-primary) !important;
+    color: var(--color-theme-white);
+    transition: 0.3s ease-in-out all; }
+
+.btn--outline-theme-developer {
+  border: 1.5px solid #81D00B !important;
+  color: #81D00B;
+  transition: background-color 0.3s ease-in-out; }
+  .btn--outline-theme-developer:hover {
+    background-color: #63a008;
+    color: var(--color-theme-white);
+    transition: background-color 0.3s ease-in-out; }
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.error {
+  max-width: 65rem;
+  text-align: center; }
+  .error__header {
+    margin-bottom: 2rem; }
+    .error__header h1 {
+      font-size: 12rem;
+      line-height: 1; }
+    .error__header p {
+      display: inline-block !important;
+      margin-top: 1rem;
+      padding: .5rem 1.6rem;
+      background-color: var(--color-theme-primary); }
+  .error__content p {
+    margin-bottom: 3rem; }
+
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-theme-primary); }
+  .footer__image {
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__image img {
+      height: 10rem; }
+  .footer__developer {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: var(--color-background-dark-blue); }
+    .footer__developer p {
+      text-align: center; }
+      .footer__developer p a {
+        transition: color .3s ease-in-out; }
+        .footer__developer p a:hover {
+          color: var(--color-theme-developer);
+          transition: color .3s ease-in-out; }
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50% !important; } }
+
+/*# sourceMappingURL=error.css.map */
